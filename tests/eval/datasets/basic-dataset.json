@@ -17,6 +17,35 @@
           }
         ]
       }
+    },
+    {
+      "eval_case_id": "uses_calculator_for_arithmetic",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Calculate 25000 * 18 / 100."}]
+      }
+    },
+    {
+      "eval_case_id": "uses_text_analyzer_for_counts",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Count the characters, words, and sentences in this exact text: Study steadily. Rest well!"
+          }
+        ]
+      }
+    },
+    {
+      "eval_case_id": "uses_search_for_current_information",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Search for the current official Google ADK documentation and give me the relevant source link."
+          }
+        ]
+      }
     }
   ]
 }

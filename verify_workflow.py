@@ -1,7 +1,7 @@
 # SMARTSTUDY - WORKFLOW VERIFICATION
 # Checks the multi-agent architecture without calling Gemini API.
 
-from smart_study_planner.agent import root_agent
+from personal_assistant.agent import root_agent
 
 
 def show_workflow(agent, level=0):
@@ -21,7 +21,7 @@ def show_workflow(agent, level=0):
 
 
 print("=" * 55)
-print("SMARTSTUDY - MULTI-AGENT WORKFLOW VERIFICATION")
+print("STUDENT COMPANION - MULTI-AGENT WORKFLOW VERIFICATION")
 print("=" * 55)
 
 show_workflow(root_agent)

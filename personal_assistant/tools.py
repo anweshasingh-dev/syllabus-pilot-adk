@@ -1,4 +1,3 @@
-
 import ast
 import operator
 import re
@@ -13,6 +12,7 @@ _OPERATIONS = {
     ast.UAdd: operator.pos,
     ast.USub: operator.neg,
 }
+
 
 def _calculate_node(node):
     # Numbers such as 10, 25.5
@@ -56,17 +56,11 @@ def calculator(expression: str) -> dict:
         if isinstance(result, (int, float)) and abs(result) > 1e100:
             raise ValueError("Result is too large")
 
-        return {
-            "status": "success",
-            "expression": expression,
-            "result": result
-        }
+        return {"status": "success", "expression": expression, "result": result}
 
     except (ValueError, SyntaxError, ZeroDivisionError, OverflowError) as e:
-        return {
-            "status": "error",
-            "message": str(e)
-        }
+        return {"status": "error", "message": str(e)}
+
 
 def text_analyzer(text: str) -> dict:
     """Count characters, words and sentences in the supplied text.
@@ -92,5 +86,5 @@ def text_analyzer(text: str) -> dict:
         "status": "success",
         "characters": character_count,
         "words": word_count,
-        "sentences": sentence_count
+        "sentences": sentence_count,
     }

@@ -21,6 +21,7 @@ WORKDIR /code
 COPY ./pyproject.toml ./README.md ./uv.lock* ./
 
 COPY ./smart_study_planner ./smart_study_planner
+COPY ./personal_assistant ./personal_assistant
 
 RUN uv sync --frozen
 
