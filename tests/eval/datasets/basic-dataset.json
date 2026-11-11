@@ -1,0 +1,22 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "asks_for_missing_requirements",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Create a study plan for Python."}]
+      }
+    },
+    {
+      "eval_case_id": "creates_requested_two_day_plan",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "I have a Python exam in 2 days. I am a beginner. The syllabus topics are Functions and Classes, and I can study 3 hours per day. Create my study plan."
+          }
+        ]
+      }
+    }
+  ]
+}
